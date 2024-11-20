@@ -16,3 +16,5 @@
 10) Colocar la punta del osciloscopio entre PA6 y GND y analizar la forma de onda mostrada. ¿Qué ocurre con el período de la señal? ¿Qué ocurre con el duty cycle?
 11) Colocar un led entre PA6 y GND (no olvidar R de polarización) y observar la intensidad del brillo.
 12) Comparar resultados
+
+Nota: Los comentarios deberán registrarse en los archivo pwm.txt, test_1.txt y test_2.txt, en el root de la carpeta app de su repositorio. Asimismo, en esa misma ubicación se debe incorporar todo material de soporte o argumentación, tal como capturas de pantalla de computadora, capturas de pantalla de osciloscopio, fotografías, etcétera.
