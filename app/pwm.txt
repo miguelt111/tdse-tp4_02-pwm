@@ -1,0 +1,19 @@
+Archivo: PWM.ioc
+
+Análisis en el IOC las configuraciones del TIM3 y del RCC:
+
+1. TIM3 - Configuracion PWM (PA6):
+
+   - Modo activado: PWM Generation Channel 1.
+   - Canal usado: Channel 1 (salida en pin PA6).
+   - Prescaler: 71. Esto divide el reloj principal por 72 (72 MHz), dando una frecuencia de 1 MHz para el temporizador.
+   - Periodo (ARR): 999. El temporizador cuenta de 0 a 999 (1000 ciclos)
+   - Resultado: frecuencia_PWM = 1 MHz/1000 = 1 kHz (T = 1 ms)
+   - Pulso (CCR1): controlado por software (valor inicial 500. DC = 50%).
+
+2. RCC - Configuracion del reloj:
+
+   - HSE (reloj externo): Habilitado
+   - PLL: Habilitada, multiplicando HSE para tener una frecuencia de 72 MHz.
+   - SYSCLK (sistema): 72 MHz.
+   - Esta configuración asegura que los temporizadores reciban el reloj correcto para una operación precisa del PWM.

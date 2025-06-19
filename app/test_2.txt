@@ -1,0 +1,24 @@
+Test 2
+
+Análisis del comportamiento del PWM en PA6
+
+1. Configuración del osciloscopio:
+   - El canal se acopló en CC (corriente continua) para observar correctamente la señal PWM.
+   - La punta del osciloscopio se conectó entre PA6 y GND.
+
+2. Circuito:
+   - Se utilizó una resistencia de 120 Ω en serie con un diodo LED blanco.
+   - El conjunto se conectó entre PA6 y GND.
+
+3. Mediciones:
+   - Período mínimo: T_max = 136 µs  (f_min = 7.35 kHz)
+   - Período máximo: T_min = 242 µs  (f = 4.13 kHz)
+   - Duty cycle: aproximadamente 50% 
+
+4. LED:
+   - A simple vista el LED tiene brillo constante
+   - El parpadeo del PWM es tan rápido que no se perciben cambios a simple vista
+
+5. Conclusión:
+   - A diferencia del test 1, en este caso la frecuencia del PWM es mucho mayor.
+   - La variación del duty cycle sigue existiendo, pero el ojo humano ya no detecta los cambios de intensidad por la alta frecuencia

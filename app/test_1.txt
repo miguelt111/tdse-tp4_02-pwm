@@ -1,0 +1,24 @@
+Test 1
+
+Análisis del comportamiento del PWM en PA6
+
+1. Configuración del osciloscopio:
+   - El canal se acopló en CC (corriente continua) para observar correctamente la señal PWM.
+   - La punta del osciloscopio se conectadó entre PA6 y GND.
+
+2. Circuito:
+   - Se utilizó una resistencia de 120 Ω en serie con un diodo LED blanco.
+   - El conjunto se conectó entre PA6 y GND.
+
+3. Mediciones:
+   - Amplitud: 3.32 V
+   - Período (T): Se observó un periodo de 1.02 ms, lo que corresponde a una frecuencia aproxima de 980.3 Hz.
+   - Duty cycle: varía progresivamente de 0% a 100% de forma cíclica.
+
+4. LED:
+   - La intensidad del brillo en el LED varía con el duty cycle.
+   - En el punto de mayor duty cycle, el brillo es máximo.
+
+5. Conclusión:
+   - El PWM genera una onda cuadrada de aproximadamente 1 kHz, con un DC que varia entre 0% y 100%.
+   - Esto permite controlar la intensidad del LED de forma suave.
